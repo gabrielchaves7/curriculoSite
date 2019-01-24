@@ -1,0 +1,103 @@
+html{
+  font-size: 100% !important;
+}
+
+body {
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+  background-color: whitesmoke !important;
+}
+
+a {
+  color: #00B7FF;
+}
+
+.block-quem-e{
+     /*background-image: linear-gradient(90deg,#307ba5,#81b9d4);*/
+     background-color: whitesmoke;
+}
+
+.titulo-principal{
+  text-align: center;
+  font-size: 2rem;
+  border-right: solid black 0.2em;
+  border-bottom: solid black 0.2em;  
+  background-color: whitesmoke;
+  padding: 1rem;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.div-img-rosto{
+  text-align: right;
+}
+.img-rosto{
+  position: absolute;
+  top: 0;
+  right: 0;
+  border: solid black 0.5rem;
+  padding: 0.5rem;
+  background-color: white;
+  width: 20%;
+  height: 250px;
+}
+
+.div-txt-who-im{
+  width: 80%;
+  padding: 0.5rem;
+}
+
+.txt-description{
+  padding: 3rem;
+  font-size: 1rem;
+  border: solid rgb(102, 0, 51) 0.5rem;
+  background-color: white;
+}
+
+.img-galeria{
+  width: 20%;
+  margin-right: 30px;
+  height: 250px;  
+}
+
+.titulo-galeria-imgs{
+  text-align: center;
+  padding-bottom: 1rem;
+  color: rgb(135,147,149);
+  font-family: sans-serif;
+  font-weight: bold;
+}
+
+.div-galeria-imgs{
+  padding: 3rem;
+  font-size: 1rem;
+}
+
+.container-galeria-imagens{
+  padding: 30px;
+  background-color: white;
+}
+
+.swiper-slide{
+  text-align: center;
+}
+
+.swiper-container{
+  height: 300px;
+}
+
+.swiper-pagination
+{
+  width: 100%;
+  height: 17px;
+  position: absolute;
+  bottom: -50px;
+  z-index: 10;
+}
+
+.swiper-pagination-bullet{
+  width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 100%;
+    background: #000;
+}
