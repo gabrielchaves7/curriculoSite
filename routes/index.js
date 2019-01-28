@@ -11,9 +11,24 @@ var descricao = "Nowadays I'am a student of Sistemas da Informação at UFMG. I 
  "if I break up with my girlfriend I will just not want to do anything else to be sad. It's something \n"+
  "hard to happens, but just destroy me.";
 
-/* GET home page. */
+ var descricaoQualidade1 = "Be determined means that I certain give one hundread and ten of what I have. Even if I'm on a pressure situation. \n"+
+ " It's easy to me keep focus on something if I like of what I do. I think that the fact I hate to not be good on what \n"+
+ "I'm doing helps a lot on my determination.";
+
+ var descricaoQualidade2 = "Be adaptative means that I can fit on everywhere, cause I learn fast, I'm determinate and don't give up. \n"+ 
+ "These things together make me adapt to any language or framework, also help me with the team and the company policies.";
+
+ var descricaoQualidade3  = "Learn fast dont need a lot of explanation. I just learn everything fast.";
+
+ var descricaoQualidade4 = "Be like Naruto means that I will never give up and always learn with my mistakes. \n" +
+ "Also means that I'm fun, friendly and very cool. Maybe I know how to make a RASENGAN!.";
+
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'Quem é Gabriel Chaves?' , description: descricao, tituloGaleria: 'Galeria de imagens'});
+  res.render('index', { title: 'Quem é Gabriel Chaves?' ,qualidade1: "Determinado", qualidade2: "Adaptativo", 
+      qualidade3: "Aprendo rápido", qualidade4: "Pareço o Naruto", qualidade5: "Ideias inovadoras", 
+      description: descricao, tituloGaleria: 'Galeria de imagens',
+      descricaoQualidadeUm:descricaoQualidade1, descricaoQualidadeDois:descricaoQualidade2, descricaoQualidadeTres:descricaoQualidade3, 
+      descricaoQualidadeQuatro: descricaoQualidade4});
 });
 
 module.exports = router;

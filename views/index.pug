@@ -7,6 +7,56 @@ block content
     img.img-rosto(src="/images/rosto.jpg")      
     div.div-txt-who-im
       p.txt-description #{description}
+
+  
+  div.div-qualidades
+    div.wrapper-qualidade(id="qualidade1")
+      div.div-img-qualidade
+        img.img-qualidades(src="/images/determinado.jpg" heigth="300" width="300")
+      h4.titulo-qualidade= qualidade1
+    div.wrapper-qualidade(id="qualidade2")
+      div.div-img-qualidade
+        img.img-qualidades(src="/images/adaptativo.jpg" heigth="300" width="300")
+      h4.titulo-qualidade= qualidade2
+    div.wrapper-qualidade(id="qualidade3")
+      div.div-img-qualidade
+        img.img-qualidades(src="/images/aprende-rapido.png" heigth="300" width="300")
+      h4.titulo-qualidade= qualidade3
+    div.wrapper-qualidade(id="qualidade4")
+      div.div-img-qualidade
+        img.img-qualidades(src="/images/naruto.png" heigth="300" width="300")
+      h4.titulo-qualidade= qualidade4
+
+  div.qualificacoes
+    h1.titulo-qualificacoes Experiências Anteriores
+    div.col-md-5.col-md-offset-1
+
+      div.div-qualificacao
+        div.titulo-imagem-qualificacao
+          img(src="/images/nodejs.png" heigth="70" width="70")
+          h2.titulo-qualificacao Node Js
+        p(style="padding-left: 100px") Trabalhei em um script para a integração de dados MySql e Oracle. Por isso, tive contato com diversas bibliotecas, como knex, lodash e bluebird. 
+
+      div.div-qualificacao
+        div.titulo-imagem-qualificacao
+          img(src="/images/sql.png" heigth="70" width="70")
+          h2.titulo-qualificacao SQL
+        p(style="padding-left: 100px") Durante o tempo em que trabalhei com NodeJs, também adquiri muito conhecimento em SQL, tendo que refazer querys que já existiam, e desenvolver novas para tabelas recém criadas. 
+
+      div.div-qualificacao
+        div.titulo-imagem-qualificacao
+          img(src="/images/csharp.png" heigth="70" width="70")
+          h2.titulo-qualificacao C #
+        p(style="padding-left: 100px") Implementação de novas demandas de um produto já existente em C#. Criei aplicações e telas do 0 utilizando o padrão MVC, domínio total do padrão MVC e de classes.
+    
+      div.div-qualificacao
+        div.titulo-imagem-qualificacao
+          img(src="/images/css.png" heigth="70" width="70")
+          h2.titulo-qualificacao HTML, CSS e Javascript
+        p(style="padding-left: 100px") Ao trabalhar com o padrão MVC em C#, desenvolvi telas desde o começo e, por isso, tenho total domínio de HTML, CSS, bootstrap, jquery e javascript.
+
+    div.col-md-6
+      img(src="/images/programador.png" heigth="100%" width="100%")
   
   div.div-galeria-imgs
     div.container-galeria-imagens
@@ -30,8 +80,28 @@ block content
             img.img-galeria(src="/images/galeriaImagens12.jpg")
         div.swiper-pagination
           span.swiper-pagination-bullet swiper-pagination-bullet-active
+        div.swiper-button-prev
+        div.swiper-button-next
 
-  
+  div.escondido.modal-qualidade(id="modalqualidade1")
+      div.div-texto-qualidade
+        p.fechar-modal X
+        p.txt-description #{descricaoQualidadeUm}
+
+  div.escondido.modal-qualidade(id="modalqualidade2")
+      div.div-texto-qualidade
+        p.fechar-modal X
+        p.txt-description #{descricaoQualidadeDois}
+
+  div.escondido.modal-qualidade(id="modalqualidade3")
+      div.div-texto-qualidade
+        p.fechar-modal X
+        p.txt-description #{descricaoQualidadeTres}
+
+  div.escondido.modal-qualidade(id="modalqualidade4")
+      div.div-texto-qualidade
+        p.fechar-modal X
+        p.txt-description #{descricaoQualidadeQuatro}
+  div.overlay-para-modal.escondido
 
 
-  

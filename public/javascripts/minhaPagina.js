@@ -11,5 +11,21 @@ $(document).ready(function () {
     pagination: {
         el: '.swiper-pagination'
     }
-    })
+    });
+
+   $('.fechar-modal').click(function(e) {  
+       $('.modal-qualidade').not('.escondido').addClass('escondido');
+       $('.overlay-para-modal').addClass('escondido');
+    });
+
+    $('.overlay-para-modal').click(function(e) {  
+        $('.modal-qualidade').not('.escondido').addClass('escondido');
+        $('.overlay-para-modal').addClass('escondido');
+     });
+
+    $('.wrapper-qualidade').click(function(e) {  
+        modalToShow = $(this).attr('id');
+        $('#modal'+modalToShow).removeClass('escondido');
+        $('.overlay-para-modal').removeClass('escondido');
+    }); 
   });
