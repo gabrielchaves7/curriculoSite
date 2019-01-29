@@ -23,12 +23,24 @@ var descricao = "Nowadays I'am a student of Sistemas da Informação at UFMG. I 
  var descricaoQualidade4 = "Be like Naruto means that I will never give up and always learn with my mistakes. \n" +
  "Also means that I'm fun, friendly and very cool. Maybe I know how to make a RASENGAN!.";
 
+ var nodejs = "Trabalhei em um script para a integração de dados MySql e Oracle. Por isso, tive contato com diversas bibliotecas, \n"+
+ "como knex, lodash e bluebird.";
+
+ var csharp = "Implementação de novas demandas de um produto já existente em C#. Criei aplicações e telas do 0 utilizando o padrão MVC, \n"+
+ "domínio total do padrão MVC e de classes.";
+
+ var sql = "Durante o tempo em que trabalhei com NodeJs, também adquiri muito conhecimento em SQL, tendo que refazer querys que já existiam, \n"+
+ "e desenvolver novas para tabelas recém criadas.";
+
+ var css = "Ao trabalhar com o padrão MVC em C#, desenvolvi telas desde o começo e, por isso, tenho total domínio de HTML, CSS, bootstrap, \n"+
+ "jquery e javascript."
+
 router.get('/', function(req, res, next) {
   res.render('index', { title: 'Quem é Gabriel Chaves?' ,qualidade1: "Determinado", qualidade2: "Adaptativo", 
       qualidade3: "Aprendo rápido", qualidade4: "Pareço o Naruto", qualidade5: "Ideias inovadoras", 
       description: descricao, tituloGaleria: 'Galeria de imagens',
       descricaoQualidadeUm:descricaoQualidade1, descricaoQualidadeDois:descricaoQualidade2, descricaoQualidadeTres:descricaoQualidade3, 
-      descricaoQualidadeQuatro: descricaoQualidade4});
+      descricaoQualidadeQuatro: descricaoQualidade4, nodejs: nodejs, sql: sql, csharp: csharp, css: css});
 });
 
 module.exports = router;

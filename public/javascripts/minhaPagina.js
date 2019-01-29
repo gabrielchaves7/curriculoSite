@@ -28,4 +28,8 @@ $(document).ready(function () {
         $('#modal'+modalToShow).removeClass('escondido');
         $('.overlay-para-modal').removeClass('escondido');
     }); 
+
+    $('.fechar-contatos').click(function(e) {  
+        $('.nao-se-convenceu').addClass('escondido');
+     });
   });
