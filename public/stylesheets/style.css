@@ -23,25 +23,26 @@ a {
   font-size: 2rem;
   display: inline-block;
   width: 80%;
-  border-bottom: solid black 0.2em;  
   background-color: whitesmoke;
   padding: 1rem;
   margin-top: 0px;
   margin-bottom: 0px;
+  border-bottom: solid black 0.2em;  
 }
 
 .div-img-rosto{
   text-align: right;
 }
 .img-rosto{
-  position: absolute;
+  /* position: absolute;
   top: 0;
-  right: 0;
+  right: 0; */
   border: solid black 0.5rem;
   padding: 0.5rem;
   background-color: white;
   width: 20%;
   height: 250px;
+  float: right;
 }
 
 .div-txt-who-im{
@@ -112,6 +113,9 @@ a {
 
 .div-qualidades{
   padding: 3rem;
+  width: 80%;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .div-img-qualidade{
