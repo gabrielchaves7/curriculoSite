@@ -194,9 +194,15 @@ a {
 .qualificacoes{
   background-color: white;
   text-align: center;
-  display: inline-block;
-  width: 100%;  
+  overflow: hidden;
   padding-bottom: 30px;
+  margin: 0 3rem 0 3rem;
+}
+
+@media all and (min-width: 1255px) {
+  .img-programador{
+    float: right;
+  }
 }
 
 .titulo-qualificacoes{
@@ -208,6 +214,9 @@ a {
 .div-qualificacao{
   text-align: left;
   color: grey;
+  overflow: hidden;
+  padding-left: 3rem;
+  padding-right: 3rem;
 }
 
 .titulo-qualificacao{
